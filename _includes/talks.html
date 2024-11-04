@@ -2,6 +2,7 @@
 {% assign current_date = "now" | date: "%Y-%m-%d" %}
 {% for talk in site.talks %}
   {% if talk.date | date: "%Y-%m-%d" >= current_date %}
+    {% capture upcoming_talk %}
     <div class="talk-item">
       <h2 onclick="toggleAbstract('{{ talk.title | slugify }}')">{{ talk.title }}</h2>
       <p><strong>Speaker:</strong> {{ talk.speaker }}</p>
@@ -10,12 +11,15 @@
         <p>{{ talk.abstract }}</p>
       </div>
     </div>
+    {% endcapture %}
+    {{ upcoming_talk | markdownify }}
   {% endif %}
 {% endfor %}
 
 <h1>Past Talks</h1>
 {% for talk in site.talks %}
   {% if talk.date | date: "%Y-%m-%d" < current_date %}
+    {% capture past_talk %}
     <div class="talk-item">
       <h2 onclick="toggleAbstract('{{ talk.title | slugify }}')">{{ talk.title }}</h2>
       <p><strong>Speaker:</strong> {{ talk.speaker }}</p>
@@ -24,6 +28,8 @@
         <p>{{ talk.abstract }}</p>
       </div>
     </div>
+    {% endcapture %}
+    {{ past_talk | markdownify }}
   {% endif %}
 {% endfor %}
 
