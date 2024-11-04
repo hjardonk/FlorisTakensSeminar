@@ -1,4 +1,3 @@
-theme: slate
 plugins:
   - jekyll-sitemap
 title: Floris Takens seminar
