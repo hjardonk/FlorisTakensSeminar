@@ -13,14 +13,9 @@
 }
 
 .header-content {
-    flex: 2; /* Adjust this to control the width of the header content */
-    padding-right: 20px; /* Space between content and photo */
-}
-
-.header-photo img {
-    max-width: 150px; /* Adjust width of the photo */
-    height: auto;
-    flex-shrink: 0; /* Prevents the photo from shrinking */
+  flex: 2; /* Keep the existing flex value */
+  padding: 20px; /* Adds padding inside the header content */
+  box-sizing: border-box; /* Ensures padding doesn't increase total width */
 }
 
 /* Center the entire container (including header, sidebar, and main content) */
