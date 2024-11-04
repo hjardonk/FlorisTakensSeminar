@@ -35,8 +35,8 @@
 .sidebar {
     background-color: var(--content-bg-color); /* Replace with the main content background color */
     color: inherit; /* Ensures text color matches the rest of the page */
-    width: 20%; /* Adjust this to control sidebar width */
-    padding: 10px; /* Optional padding for sidebar content */
+    width: 10%; /* Adjust this to control sidebar width */
+    padding: 5px; /* Optional padding for sidebar content */
 }
 
 /* Sidebar photo styling */
@@ -49,7 +49,7 @@
   width: 80%; /* Adjusts the width of the photo (feel free to change this based on your preference) */
   max-width: 150px; /* Ensures the image doesn’t get too large */
   height: auto; /* Keeps the aspect ratio of the photo */
-  border-radius: 8px; /* Optional: adds rounded corners */
+  border-radius: 6px; /* Optional: adds rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow for depth */
 }
 
@@ -59,7 +59,7 @@
 
 .talk-item h2 {
   cursor: pointer;
-  color: #007acc; /* Adjust color to match theme */
+  color: #00558E; /* Adjust color to match theme */
 }
 
 .abstract-content {
