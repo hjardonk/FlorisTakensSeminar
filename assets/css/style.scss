@@ -28,10 +28,13 @@
     display: flex;
     max-width: 100%; /* Allows it to use the full window width */
     margin: 0 auto; /* Centers container in the window */
+    background-color: var(--content-bg-color); /* Replace if needed with actual color code */
 }
 
 /* Sidebar styling */
 .sidebar {
+    background-color: var(--content-bg-color); /* Replace with the main content background color */
+    color: inherit; /* Ensures text color matches the rest of the page */
     width: 20%; /* Adjust this to control sidebar width */
     padding: 10px; /* Optional padding for sidebar content */
     background-color: #f4f4f4; /* Light background for sidebar */
