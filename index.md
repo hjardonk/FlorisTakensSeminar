@@ -6,6 +6,7 @@ title: Home
 {% assign current_date = "now" | date: "%Y-%m-%d" %}
 {% for talk in site.talks %}
   {% if talk.date | date: "%Y-%m-%d" >= current_date %}
+    {% raw %}
     <div class="talk-item">
       <h2 onclick="toggleAbstract('{{ talk.title | slugify }}')">{{ talk.title }}</h2>
       <p><strong>Speaker:</strong> {{ talk.speaker }}</p>
@@ -14,12 +15,14 @@ title: Home
         <p>{{ talk.abstract }}</p>
       </div>
     </div>
+    {% endraw %}
   {% endif %}
 {% endfor %}
 
 <h1>Past Talks</h1>
 {% for talk in site.talks %}
   {% if talk.date | date: "%Y-%m-%d" < current_date %}
+    {% raw %}
     <div class="talk-item">
       <h2 onclick="toggleAbstract('{{ talk.title | slugify }}')">{{ talk.title }}</h2>
       <p><strong>Speaker:</strong> {{ talk.speaker }}</p>
@@ -28,6 +31,7 @@ title: Home
         <p>{{ talk.abstract }}</p>
       </div>
     </div>
+    {% endraw %}
   {% endif %}
 {% endfor %}
 
