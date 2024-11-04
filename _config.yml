@@ -2,4 +2,7 @@ plugins:
   - jekyll-sitemap
 title: Floris Takens seminar
 description: The seminar of our group Dynamical Systems, Geometry, and Mathematical Physics is named after our founding father Floris Takens (1940-2010) whose research has been very influential on our work. This is also reflected in the spirit of our group seminar.
-
+collections:
+  talks:
+    output: true
+    sort_by: "date"
