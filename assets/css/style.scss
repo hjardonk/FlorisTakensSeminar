@@ -7,24 +7,19 @@
     text-align: justify;
 }
 
-/* Header with photo - default for wide screens */
+/* Layout for header with photo */
 .header-with-photo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap; /* Prevents wrapping unless screen is narrow */
+    position: relative;
+    padding-right: 180px; /* Add padding to make room for the photo */
 }
 
-/* Main header content (title and description) */
-.header-content {
-    flex: 1 1 auto; /* Allow it to grow and shrink as needed */
-    max-width: 70%; /* Adjust based on how much space you want */
-}
-
-/* Sidebar photo styling for wider screens */
+/* Sidebar photo positioned absolutely on the right */
 .header-photo {
-    flex: 0 0 150px; /* Fixed width for the photo */
-    margin-left: 20px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px; /* Set the width as needed */
 }
 
 .header-photo img {
@@ -36,18 +31,14 @@
 /* Responsive adjustment for narrow screens */
 @media (max-width: 768px) {
     .header-with-photo {
-        flex-direction: column;
-        align-items: center;
+        padding-right: 0;
     }
 
     .header-photo {
+        position: static;
         margin: 20px 0 0 0;
         width: 100%;
-        text-align: center;
-    }
-
-    .header-content {
-        max-width: 100%;
+        transform: none;
         text-align: center;
     }
 }
