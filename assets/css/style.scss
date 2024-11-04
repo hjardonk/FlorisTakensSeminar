@@ -7,41 +7,43 @@
     text-align: justify;
 }
 
-/* Container with main content and photo */
-.content-wrap {
+/* Layout for header with photo */
+.header-with-photo {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 20px; /* Add space between header and content */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-/* Sidebar photo for wider screens */
-.photo-sidebar {
-    width: 200px; /* Adjust as needed */
-    margin-right: 20px;
+/* Main header content (title and description) */
+.header-content {
+    flex-grow: 1;
+}
+
+/* Sidebar photo styling */
+.header-photo {
+    width: 150px; /* Adjust size as needed */
+    margin-left: 20px;
     flex-shrink: 0;
 }
 
-.photo-sidebar img {
+.header-photo img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-/* Main content styling */
-#main_content_wrap {
-    flex-grow: 1;
-}
-
-/* Move the photo below the main content on narrow screens */
+/* Responsive adjustment for narrow screens */
 @media (max-width: 768px) {
-    .content-wrap {
+    .header-with-photo {
         flex-direction: column;
         align-items: center;
     }
 
-    .photo-sidebar {
-        margin: 20px 0 0 0;
+    .header-photo {
+        margin: 20px 0 0 0; /* Space it below the title and description */
         width: 100%;
+        text-align: center;
     }
 }
+
