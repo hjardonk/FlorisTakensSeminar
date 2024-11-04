@@ -1,5 +1,6 @@
 ---
 layout: default
+title: "Upcoming and Past Talks"
 ---
 
 <h1>Upcoming Talks</h1>
