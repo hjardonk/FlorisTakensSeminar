@@ -3,11 +3,11 @@
 
 @import "jekyll-theme-slate";
 /* Justify the description text */
-.site-description {
+#project_tagline {
     text-align: justify;
 }
 
 /* Hide the GitHub banner */
-.github-corner {
+#forkme_banner {
     display: none;
 }
