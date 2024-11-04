@@ -14,53 +14,39 @@
   <body>
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-   <header class="inner header-with-photo">
-     
-     <!-- Flex container for header content and photo -->
-     <div class="header-flex-container">
-       
-       <!-- Main header content (title and description) -->
-       <div class="header-content">
-         <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
-         <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+      <header class="inner header-without-photo">
+        <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+        <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
 
-         {% if site.show_downloads %}
-           <section id="downloads">
-             <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
-             <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
-           </section>
-         {% endif %}
-       </div>
-
-       <!-- Sidebar photo within header -->
-       <div class="header-photo">
-         <img src="{{ '/assets/images/takens_photo.jpg' | relative_url }}" alt="Description of the photo">
-       </div>
-
-     </div>
-   </header>
- </div>
-
+        {% if site.show_downloads %}
+          <section id="downloads">
+            <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
+          </section>
+        {% endif %}
+      </header>
+    </div>
 
     <!-- MAIN CONTENT -->
     <!-- Wrap main content and sidebar in a flex container -->
-<div id="main_wrap" class="outer">
-    <div class="layout-container">
-
-        <!-- Sidebar on the left -->
+    <div id="main_wrap" class="outer">
+      <div class="layout-container">
+        
+        <!-- Sidebar on the left with the photo -->
         <aside class="sidebar">
-            <!-- Sidebar content here -->
-            <p>Sidebar content, links, or navigation</p>
+          <div class="sidebar-photo">
+            <img src="{{ '/assets/images/takens_photo.jpg' | relative_url }}" alt="Description of the photo">
+          </div>
+          <p>Sidebar content, links, or navigation</p>
         </aside>
 
         <!-- Main content area -->
         <section id="main_content" class="inner">
-            {{ content }}
+          {{ content }}
         </section>
-
+        
+      </div>
     </div>
-</div>
-
 
     <!-- FOOTER -->
     <div id="footer_wrap" class="outer">
@@ -70,3 +56,6 @@
         {% endif %}
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
+    </div>
+  </body>
+</html>
