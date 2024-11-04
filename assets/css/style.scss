@@ -7,24 +7,24 @@
     text-align: justify;
 }
 
-/* Layout for header with photo */
+/* Header with photo - default for wide screens */
 .header-with-photo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Prevents wrapping unless screen is narrow */
 }
 
 /* Main header content (title and description) */
 .header-content {
-    flex-grow: 1;
+    flex: 1 1 auto; /* Allow it to grow and shrink as needed */
+    max-width: 70%; /* Adjust based on how much space you want */
 }
 
-/* Sidebar photo styling */
+/* Sidebar photo styling for wider screens */
 .header-photo {
-    width: 150px; /* Adjust size as needed */
+    flex: 0 0 150px; /* Fixed width for the photo */
     margin-left: 20px;
-    flex-shrink: 0;
 }
 
 .header-photo img {
@@ -41,8 +41,13 @@
     }
 
     .header-photo {
-        margin: 20px 0 0 0; /* Space it below the title and description */
+        margin: 20px 0 0 0;
         width: 100%;
+        text-align: center;
+    }
+
+    .header-content {
+        max-width: 100%;
         text-align: center;
     }
 }
