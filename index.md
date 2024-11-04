@@ -2,10 +2,15 @@
 title: Home
 ---
 
+---
+layout: default
+title: "Upcoming and Past Talks"
+---
+
 <h1>Upcoming Talks</h1>
 {% assign current_date = "now" | date: "%Y-%m-%d" %}
 {% for talk in site.talks %}
-  {% if talk.date >= current_date %}
+  {% if talk.date | date: "%Y-%m-%d" >= current_date %}
     <div class="talk-item">
       <h2 onclick="toggleAbstract('{{ talk.title | slugify }}')">{{ talk.title }}</h2>
       <p><strong>Speaker:</strong> {{ talk.speaker }}</p>
@@ -19,7 +24,7 @@ title: Home
 
 <h1>Past Talks</h1>
 {% for talk in site.talks %}
-  {% if talk.date < current_date %}
+  {% if talk.date | date: "%Y-%m-%d" < current_date %}
     <div class="talk-item">
       <h2 onclick="toggleAbstract('{{ talk.title | slugify }}')">{{ talk.title }}</h2>
       <p><strong>Speaker:</strong> {{ talk.speaker }}</p>
@@ -41,5 +46,6 @@ title: Home
     }
   }
 </script>
+
 
 
