@@ -7,39 +7,20 @@
     text-align: justify;
 }
 
-/* Layout for header with photo */
-.header-with-photo {
-    position: relative;
-    padding-right: 180px; /* Add padding to make room for the photo */
+.header-flex-container {
+    display: flex;
+    align-items: center;
 }
 
-/* Sidebar photo positioned absolutely on the right */
-.header-photo {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 150px; /* Set the width as needed */
+.header-content {
+    flex: 2; /* Adjust this to control the width of the header content */
+    padding-right: 20px; /* Space between content and photo */
 }
 
 .header-photo img {
-    max-width: 100%;
+    max-width: 150px; /* Adjust width of the photo */
     height: auto;
-    display: block;
+    flex-shrink: 0; /* Prevents the photo from shrinking */
 }
 
-/* Responsive adjustment for narrow screens */
-@media (max-width: 768px) {
-    .header-with-photo {
-        padding-right: 0;
-    }
-
-    .header-photo {
-        position: static;
-        margin: 20px 0 0 0;
-        width: 100%;
-        transform: none;
-        text-align: center;
-    }
-}
 
