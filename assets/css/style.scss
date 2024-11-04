@@ -53,6 +53,22 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow for depth */
 }
 
+.talk-item {
+  margin-bottom: 20px;
+}
+
+.talk-item h2 {
+  cursor: pointer;
+  color: #007acc; /* Adjust color to match theme */
+}
+
+.abstract-content {
+  padding-left: 15px;
+  border-left: 2px solid #ddd; /* Adjust color as needed */
+  margin-top: 5px;
+}
+
+
 /* Main content styling */
 #main_content {
     width: 80%; /* Main content takes up remaining space */
