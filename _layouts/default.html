@@ -43,11 +43,24 @@
 
 
     <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        {{ content }}
-      </section>
+    <!-- Wrap main content and sidebar in a flex container -->
+<div id="main_wrap" class="outer">
+    <div class="layout-container">
+
+        <!-- Sidebar on the left -->
+        <aside class="sidebar">
+            <!-- Sidebar content here -->
+            <p>Sidebar content, links, or navigation</p>
+        </aside>
+
+        <!-- Main content area -->
+        <section id="main_content" class="inner">
+            {{ content }}
+        </section>
+
     </div>
+</div>
+
 
     <!-- FOOTER -->
     <div id="footer_wrap" class="outer">
