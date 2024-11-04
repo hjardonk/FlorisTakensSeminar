@@ -1,0 +1,64 @@
+---
+layout: default
+title: "Upcoming and Past Talks"
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+  </header>
+
+  <main>
+    <h1>Upcoming Talks</h1>
+    {% assign current_date = "now" | date: "%Y-%m-%d" %}
+    {% for talk in site.talks %}
+      {% if talk.date | date: "%Y-%m-%d" >= current_date %}
+        <div class="talk-item">
+          <h2 onclick="toggleAbstract('{{ talk.title | slugify }}')">{{ talk.title }}</h2>
+          <p><strong>Speaker:</strong> {{ talk.speaker }}</p>
+          <p><strong>Date:</strong> {{ talk.date | date: "%B %d, %Y" }}</p>
+          <div id="{{ talk.title | slugify }}" class="abstract-content" style="display: none;">
+            <p>{{ talk.abstract }}</p>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+
+    <h1>Past Talks</h1>
+    {% for talk in site.talks %}
+      {% if talk.date | date: "%Y-%m-%d" < current_date %}
+        <div class="talk-item">
+          <h2 onclick="toggleAbstract('{{ talk.title | slugify }}')">{{ talk.title }}</h2>
+          <p><strong>Speaker:</strong> {{ talk.speaker }}</p>
+          <p><strong>Date:</strong> {{ talk.date | date: "%B %d, %Y" }}</p>
+          <div id="{{ talk.title | slugify }}" class="abstract-content" style="display: none;">
+            <p>{{ talk.abstract }}</p>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </main>
+
+  <script>
+    function toggleAbstract(id) {
+      var content = document.getElementById(id);
+      if (content.style.display === "none") {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>
