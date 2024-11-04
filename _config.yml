@@ -7,3 +7,5 @@ description: The seminar of our group Dynamical Systems and Mathematical Physics
 include:
   - assets/css/custom.css
   - _includes/custom_head.html
+# Inject custom CSS in head
+head: _includes/custom_head.html
