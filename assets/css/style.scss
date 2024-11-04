@@ -91,6 +91,30 @@ body {
   padding: 15px;
 }
 
+/* Background color for the footer */
+#footer_wrap {
+  background-color: #212121; /* Dark background color */
+  padding: 20px;
+}
+
+/* Style for footer text */
+#footer_wrap .inner p {
+  color: #666666; /* Dark gray text for better contrast */
+  font-size: 0.9em; /* Slightly smaller font size for footer */
+}
+
+/* Style for footer links */
+#footer_wrap .inner a {
+  color: #888888; /* Dark gray color for links */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for footer links */
+#footer_wrap .inner a:hover {
+  color: #aaaaaa; /* Lighter gray on hover for contrast */
+  text-decoration: underline; /* Optional: underline on hover */
+}
+
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .layout-container {
