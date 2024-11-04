@@ -67,17 +67,18 @@ body {
 }
 
 .talk-item h2 {
-  color: #4db6ac; /* Teal for talk titles */
-  cursor: pointer;
+ color: #8B0000; /* Dark red */
+  cursor: pointer; /* Makes it clear that it's clickable */
+  transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
 .talk-item h2:hover {
-  color: #80a68a; /* Lighter teal on hover */
+  color: #B22222; /* Slightly lighter red on hover */
 }
 
 .abstract-content {
-  border: 1px solid #4db6ac; /* Border around collapsible content */
-  border-radius: 8px;
+  border: 1px solid #8B0000; /* Border around collapsible content */
+  border-radius: 6px;
   padding: 10px;
   background-color: #333333; /* Slightly lighter than background */
   margin-top: 5px;
