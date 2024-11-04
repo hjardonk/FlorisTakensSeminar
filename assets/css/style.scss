@@ -37,6 +37,20 @@
     background-color: #f4f4f4; /* Light background for sidebar */
 }
 
+/* Sidebar photo styling */
+.sidebar-photo {
+  text-align: center; /* Center-aligns the photo in the sidebar */
+  margin-bottom: 20px; /* Adds some space below the photo */
+}
+
+.sidebar-photo img {
+  width: 80%; /* Adjusts the width of the photo (feel free to change this based on your preference) */
+  max-width: 150px; /* Ensures the image doesn’t get too large */
+  height: auto; /* Keeps the aspect ratio of the photo */
+  border-radius: 8px; /* Optional: adds rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow for depth */
+}
+
 /* Main content styling */
 #main_content {
     width: 80%; /* Main content takes up remaining space */
