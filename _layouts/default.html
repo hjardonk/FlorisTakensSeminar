@@ -14,38 +14,39 @@
   <body>
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-      <header class="inner">
+      <header class="inner header-with-photo">
+        
+        <!-- Main header content (title and description) -->
+        <div class="header-content">
+          
 
-        <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
-        <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
 
-        {% if site.show_downloads %}
-          <section id="downloads">
-            <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
-            <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
-          </section>
-        {% endif %}
+          {% if site.show_downloads %}
+            <section id="downloads">
+              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
+            </section>
+          {% endif %}
+        </div>
+
+        <!-- Sidebar photo within header -->
+        <div class="header-photo">
+          <img src="{{ '/assets/images/takens_photo.jpg' | relative_url }}" alt="Description of the photo">
+        </div>
+
       </header>
     </div>
 
-    <!-- CONTENT WRAP WITH PHOTO SIDEBAR -->
-    <div class="content-wrap">
-      
-      <!-- Sidebar photo -->
-      <div class="photo-sidebar">
-        <img src="{{ '/assets/images/takens_photo.jpg' | relative_url }}" alt="Description of the photo">
-      </div>
-
-      <!-- MAIN CONTENT -->
-      <div id="main_content_wrap" class="outer">
-        <section id="main_content" class="inner">
-          {{ content }}
-        </section>
-      </div>
-
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        {{ content }}
+      </section>
     </div>
 
-    <!-- FOOTER  -->
+    <!-- FOOTER -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
         {% if site.github.is_project_page %}
