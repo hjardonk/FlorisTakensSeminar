@@ -7,15 +7,17 @@
     text-align: justify;
 }
 
-/* Main content and sidebar wrapping container */
+/* Container with main content and photo */
 .content-wrap {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px; /* Add space between header and content */
 }
 
-/* Sidebar photo - positioned on the left side for wide screens */
+/* Sidebar photo for wider screens */
 .photo-sidebar {
-    width: 200px; /* Adjust width as needed */
+    width: 200px; /* Adjust as needed */
     margin-right: 20px;
     flex-shrink: 0;
 }
@@ -26,7 +28,12 @@
     display: block;
 }
 
-/* Move the sidebar to the bottom on narrow screens */
+/* Main content styling */
+#main_content_wrap {
+    flex-grow: 1;
+}
+
+/* Move the photo below the main content on narrow screens */
 @media (max-width: 768px) {
     .content-wrap {
         flex-direction: column;
