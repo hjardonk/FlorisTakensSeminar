@@ -2,11 +2,6 @@
 title: Home
 ---
 
----
-layout: default
-title: "Upcoming and Past Talks"
----
-
 <h1>Upcoming Talks</h1>
 {% assign current_date = "now" | date: "%Y-%m-%d" %}
 {% for talk in site.talks %}
