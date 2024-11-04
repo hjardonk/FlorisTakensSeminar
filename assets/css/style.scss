@@ -23,4 +23,33 @@
     flex-shrink: 0; /* Prevents the photo from shrinking */
 }
 
+/* Layout container for sidebar and main content */
+.layout-container {
+    display: flex;
+    max-width: 100%; /* Allows it to use the full window width */
+    margin: 0 auto; /* Centers container in the window */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 20%; /* Adjust this to control sidebar width */
+    padding: 10px; /* Optional padding for sidebar content */
+    background-color: #f4f4f4; /* Light background for sidebar */
+}
+
+/* Main content styling */
+#main_content {
+    width: 80%; /* Main content takes up remaining space */
+    padding: 10px 20px;
+}
+
+/* Optional styling for smaller screens */
+@media (max-width: 768px) {
+    .layout-container {
+        flex-direction: column; /* Stack sidebar above content on small screens */
+    }
+    .sidebar, #main_content {
+        width: 100%; /* Full width for both sections */
+    }
+}
 
