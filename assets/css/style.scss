@@ -25,18 +25,18 @@
 
 /* Layout container for sidebar and main content */
 .layout-container {
-    display: flex;
-    max-width: 100%; /* Allows it to use the full window width */
-    margin: 0 auto; /* Centers container in the window */
-    background-color: var(--content-bg-color); /* Replace if needed with actual color code */
+  display: flex;
+  justify-content: center;
+  max-width: 1200px; /* Limits the width on larger screens */
+  margin: 0 auto;
+  padding: 15px;
 }
 
 /* Sidebar styling */
 .sidebar {
-    background-color: var(--content-bg-color); /* Replace with the main content background color */
-    color: inherit; /* Ensures text color matches the rest of the page */
-    width: 200px; /* Adjust this to control sidebar width */
-    padding: 5px; /* Optional padding for sidebar content */
+  width: 200px;
+  max-width: 20%; /* Limits sidebar width on larger screens */
+  padding: 15px;
 }
 
 /* Sidebar photo styling */
@@ -71,18 +71,22 @@
 
 /* Main content styling */
 #main_content {
-    width: 80%; /* Main content takes up remaining space */
-    padding: 10px 20px;
-    color: #ededed;
+  width: 75%;
+  padding: 15px;
 }
 
-/* Optional styling for smaller screens */
+/* Responsive Adjustments for Smaller Screens */
 @media (max-width: 768px) {
-    .layout-container {
-        flex-direction: column; /* Stack sidebar above content on small screens */
-    }
-    .sidebar, #main_content {
-        width: 100%; /* Full width for both sections */
-    }
+  .layout-container {
+    flex-direction: column; /* Stacks the sidebar and content vertically */
+    padding: 0; /* Removes extra padding for a tighter fit */
+  }
+
+  .sidebar,
+  #main_content {
+    width: 100%; /* Full-width for both sidebar and content */
+    max-width: 100%;
+    padding: 10px; /* Adjusts padding for smaller screens */
+  }
 }
 
