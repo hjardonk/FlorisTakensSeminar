@@ -11,3 +11,25 @@
 #forkme_banner {
     display: none;
 }
+
+/* Default styling for wide screens - photo on the side */
+.responsive-photo {
+    float: right;
+    width: 40%;  /* Adjust the width as needed */
+    margin: 0 0 20px 20px;
+}
+
+.responsive-photo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Styling for narrower screens - photo at the bottom */
+@media (max-width: 768px) {
+    .responsive-photo {
+        float: none;
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+}
