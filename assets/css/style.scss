@@ -79,10 +79,14 @@ font-size: 1.3em !important;
 
 /* Sidebar styling */
 .sidebar {
-  background-color: inherit !important; /* Darker shade for sidebar */
+  height: 100vh; /* Makes sidebar the full height of the viewport */
+  overflow-y: auto; /* Adds scroll only if content overflows */
+  position: fixed; /* Keeps it in place as you scroll through the main content */
+  background-color: transparent !important; /* Darker shade for sidebar */
   width: 200px;
   padding: 15px;
   margin-right: 10px; /* Space between sidebar and main content */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Light, semi-transparent border */
 }
 
 /* Sidebar photo styling */
