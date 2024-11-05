@@ -16,6 +16,10 @@ body, h1, h2, header, p, figcaption, .header-title {
     font-family: 'Inter', sans-serif !important;
 }
 
+footer {
+    background: inherit;
+}
+
 .header-flex-container {
     display: flex;
     align-items: center;
@@ -123,7 +127,6 @@ font-size: 1.3em !important;
 
 /* Background color for the footer */
 #footer_wrap {
-  background-color: #212121; /* Dark background color */
   padding: 20px;
 }
 
