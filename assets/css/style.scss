@@ -23,6 +23,10 @@ body {
   box-sizing: border-box; /* Ensures padding doesn't increase total width */
 }
 
+h1, .page-title, .site-title {
+    text-align: center;
+}
+
 .header-content h1 {
   color: #ff8c42; /* Rusty orange for header */
 }
