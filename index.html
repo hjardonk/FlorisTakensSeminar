@@ -16,7 +16,7 @@ title: ""
 <body>
  
 
-  <main>
+ <main>
     <h1 style="color: #1a3b5d;">Upcoming Talks</h1>
     {% assign current_date = "now" | date: "%Y-%m-%d" %}
     {% for talk in site.talks %}
@@ -25,7 +25,10 @@ title: ""
         <div class="talk-item">
           <h2 onclick="toggleAbstract('upcoming-{{ talk_date }}-{{ talk.title | slugify }}')">{{ talk.title }}</h2>
           <p><strong>Speaker:</strong> {{ talk.speaker }}</p>
-          <p><strong>Date:</strong> {{ talk.date | date: "%B %d, %Y" }}</p>
+          <p class="date-room">
+            <span class="date"><strong>Date:</strong> {{ talk.date | date: "%B %d, %Y" }}</span>
+            <span class="room"><strong>Room:</strong> {{ talk.room }}</span>
+          </p>
           <div id="upcoming-{{ talk_date }}-{{ talk.title | slugify }}" class="abstract-content" style="display: none;">
             <p>{{ talk.abstract }}</p>
           </div>
@@ -40,7 +43,10 @@ title: ""
         <div class="talk-item">
           <h2 onclick="toggleAbstract('past-{{ talk_date }}-{{ talk.title | slugify }}')">{{ talk.title }}</h2>
           <p><strong>Speaker:</strong> {{ talk.speaker }}</p>
-          <p><strong>Date:</strong> {{ talk.date | date: "%B %d, %Y" }}</p>
+          <p class="date-room">
+            <span class="date"><strong>Date:</strong> {{ talk.date | date: "%B %d, %Y" }}</span>
+            <span class="room"><strong>Room:</strong> {{ talk.room }}</span>
+          </p>
           <div id="past-{{ talk_date }}-{{ talk.title | slugify }}" class="abstract-content" style="display: none;">
             <p>{{ talk.abstract }}</p>
           </div>
@@ -48,6 +54,7 @@ title: ""
       {% endif %}
     {% endfor %}
   </main>
+
 
   <script>
     function toggleAbstract(id) {
