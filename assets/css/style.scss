@@ -9,7 +9,10 @@
 
 body {
   color: #f0f0f0; /* Light gray text color */
-  font-family: 'Latin Modern Roman', serif;
+}
+
+body, h1, h2, header {
+    font-family: 'Latin Modern Roman', serif; /* Replace with your chosen font */
 }
 
 .header-flex-container {
@@ -21,7 +24,6 @@ body {
   flex: 2; /* Keep the existing flex value */
   padding: 20px; /* Adds padding inside the header content */
   box-sizing: border-box; /* Ensures padding doesn't increase total width */
-  font-family: 'Latin Modern Roman', serif;
 }
 
 h1, .page-title, .site-title {
@@ -36,14 +38,17 @@ h1, .page-title, .site-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.1em;
 }
 
 .date-room .date {
     flex-grow: 1;
+    font-size: 1.1em;
 }
 
 .date-room .room {
     text-align: right;
+    font-size: 1.1em;
 }
 
 /* Center the entire container (including header, sidebar, and main content) */
@@ -101,6 +106,7 @@ h1, .page-title, .site-title {
   padding: 10px;
   background-color: #333333; /* Slightly lighter than background */
   margin-top: 5px;
+  font-size: 1.1em; /* Adjust as desired */
 }
 
 
