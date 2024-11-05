@@ -17,7 +17,7 @@ body, h1, h2, header, p, figcaption, .header-title {
 }
 
 footer {
-    background: transparent;
+    background: transparent !important;
 }
 
 .header-flex-container {
@@ -127,7 +127,7 @@ font-size: 1.3em !important;
 
 /* Background color for the footer */
 #footer_wrap {
-    background: transparent;
+    background: transparent !important;
     padding: 20px;
 }
 
