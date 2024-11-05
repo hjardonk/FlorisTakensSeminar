@@ -12,7 +12,7 @@ body {
 }
 
 body, h1, h2, header {
-    font-family: 'Latin Modern Roman', serif; /* Replace with your chosen font */
+    font-family: 'Latin Modern Roman', serif !important; /* Replace with your chosen font */
 }
 
 .header-flex-container {
