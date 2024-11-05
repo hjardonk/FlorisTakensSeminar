@@ -21,6 +21,7 @@ body {
   flex: 2; /* Keep the existing flex value */
   padding: 20px; /* Adds padding inside the header content */
   box-sizing: border-box; /* Ensures padding doesn't increase total width */
+  font-family: 'Latin Modern Roman', serif;
 }
 
 h1, .page-title, .site-title {
@@ -29,6 +30,20 @@ h1, .page-title, .site-title {
 
 .header-content h1 {
   color: #ff8c42; /* Rusty orange for header */
+}
+
+.date-room {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-room .date {
+    flex-grow: 1;
+}
+
+.date-room .room {
+    text-align: right;
 }
 
 /* Center the entire container (including header, sidebar, and main content) */
