@@ -17,7 +17,7 @@ title: ""
  
 
  <main>
-    <h1 style="color: #1a3b5d;">Upcoming Talks</h1>
+    <h1 style="color: #47627D;">Upcoming Talks</h1>
     {% assign current_date = "now" | date: "%Y-%m-%d" %}
     {% for talk in site.talks %}
       {% assign talk_date = talk.date | date: "%Y-%m-%d" %}
@@ -36,7 +36,7 @@ title: ""
       {% endif %}
     {% endfor %}
 
-    <h1 style="color: #1a3b5d;">Past Talks</h1>
+    <h1 style="color: #47627D;">Past Talks</h1>
     {% for talk in site.talks %}
       {% assign talk_date = talk.date | date: "%Y-%m-%d" %}
       {% if talk_date < current_date %}
