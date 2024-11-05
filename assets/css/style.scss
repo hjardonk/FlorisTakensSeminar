@@ -79,7 +79,7 @@ font-size: 1.3em !important;
 
 /* Sidebar styling */
 .sidebar {
-  background-color: #212121 !important; /* Darker shade for sidebar */
+  background-color: inherit !important; /* Darker shade for sidebar */
   width: 200px;
   padding: 15px;
   margin-right: 10px; /* Space between sidebar and main content */
@@ -110,7 +110,7 @@ font-size: 1.3em !important;
 }
 
 .talk-item h2:hover {
-  color: #02075d !important; 
+  color: #48929b !important; 
 }
 
 .abstract-content {
