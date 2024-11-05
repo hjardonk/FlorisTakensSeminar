@@ -9,7 +9,7 @@
 
 body {
   color: #f0f0f0; /* Light gray text color */
-  font-family: 'Roboto', sans-serif;
+  font-family: 'EB Garamond', serif;
 }
 
 .header-flex-container {
@@ -71,17 +71,17 @@ h1, .page-title, .site-title {
 }
 
 .talk-item h2 {
- color: #f0f0f0;
+ color: #f0f0f0 !important;
   cursor: pointer; /* Makes it clear that it's clickable */
   transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
 .talk-item h2:hover {
-  color: #e1e8e4; 
+  color: #e1e8e4 !important; 
 }
 
 .abstract-content {
-  border: 1px solid #000000; /* Border around collapsible content */
+  border: 1px solid #000000 !important; /* Border around collapsible content */
   border-radius: 6px;
   padding: 10px;
   background-color: #333333; /* Slightly lighter than background */
