@@ -107,6 +107,7 @@ font-size: 1.3em !important;
  color: #f0f0f0 !important;
   cursor: pointer; /* Makes it clear that it's clickable */
   transition: color 0.3s ease; /* Smooth transition for color change */
+  justify-content: space-between; /* Makes the arrow align to the right */  
 }
 
 .talk-item h2:hover {
@@ -123,12 +124,12 @@ font-size: 1.3em !important;
 }
 
 .arrow {
-    margin-left: auto;
+    font-size: 0.5em; /* Make the arrow smaller */
     transition: transform 0.3s;
 }
 
 .talk-item h2.open .arrow {
-    transform: rotate(90deg); /* Rotate to indicate expanded view */
+    transform: rotate(180deg); 
 }
 
 
