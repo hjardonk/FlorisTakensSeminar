@@ -23,7 +23,7 @@ title: ""
       {% assign talk_date = talk.date | date: "%Y-%m-%d" %}
       {% if talk_date >= current_date %}
         <div class="talk-item">
-          <h2 onclick="toggleAbstract('upcoming-{{ talk_date }}-{{ talk.title | slugify }}')">{{ talk.title }} <span class="arrow">&#9654;</span> </h2>
+          <h2 onclick="toggleAbstract('upcoming-{{ talk_date }}-{{ talk.title | slugify }}')">{{ talk.title }} <span class="arrow">&#9660;</span> </h2>
           <p class="speaker"><strong>Speaker:</strong> {{ talk.speaker }}</p>
           <p class="date-room">
             <span class="date"><strong>Date:</strong> {{ talk.date | date: "%B %d, %Y" }}</span>
@@ -41,7 +41,7 @@ title: ""
       {% assign talk_date = talk.date | date: "%Y-%m-%d" %}
       {% if talk_date < current_date %}
         <div class="talk-item">
-          <h2 onclick="toggleAbstract('past-{{ talk_date }}-{{ talk.title | slugify }}')">{{ talk.title }} <span class="arrow">&#9654;</span> </h2>
+          <h2 onclick="toggleAbstract('past-{{ talk_date }}-{{ talk.title | slugify }}')">{{ talk.title }} <span class="arrow">&#9660;</span> </h2>
           <p class="speaker"><strong>Speaker:</strong> {{ talk.speaker }}</p>
           <p class="date-room">
             <span class="date"><strong>Date:</strong> {{ talk.date | date: "%B %d, %Y" }}</span>
