@@ -122,6 +122,15 @@ font-size: 1.3em !important;
   font-size: 1.1em; /* Adjust as desired */
 }
 
+.arrow {
+    margin-left: auto;
+    transition: transform 0.3s;
+}
+
+.talk-item h2.open .arrow {
+    transform: rotate(90deg); /* Rotate to indicate expanded view */
+}
+
 
 /* Main content styling */
 #main_content {
