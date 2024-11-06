@@ -125,11 +125,11 @@ font-size: 1.3em !important;
 
 .arrow {
     font-size: 0.5em; /* Make the arrow smaller */
-    transition: transform 0.3s;
+    transition: transform 0.3s ease !important;
 }
 
 .talk-item h2.open .arrow {
-    transform: rotate(180deg); 
+    transform: rotate(180deg) !important; 
 }
 
 
