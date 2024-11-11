@@ -26,7 +26,7 @@ title: ""
           <h2 onclick="toggleAbstract('upcoming-{{ talk_date }}-{{ talk.title | slugify }}')">{{ talk.title }} <span class="arrow">&#9660;</span> </h2>
           <p class="speaker"><strong>Speaker:</strong> {{ talk.speaker }}</p>
           <p class="date-room">
-            <span class="date"><strong>Date & time:</strong> {{ talk.date | date: "%B %d, %Y" }} from 3pm - 5pm </span>
+            <span class="date"><strong>Date & time:</strong> {{ talk.date | date: "%B %d, %Y" }}, 3 - 5 pm </span>
             <span class="room"><strong>Room:</strong> {{ talk.room }}</span>
           </p>
           <div id="upcoming-{{ talk_date }}-{{ talk.title | slugify }}" class="abstract-content" style="display: none;">
