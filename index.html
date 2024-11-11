@@ -29,6 +29,7 @@ title: ""
             <span class="date"><strong>Date & time:</strong> {{ talk.date | date: "%B %d, %Y" }}, 3 - 5 pm </span>
             <span class="room"><strong>Room:</strong> {{ talk.room }}</span>
           </p>
+          <p class="time"><strong>Time:</strong>{{ talk.time }}</p>
           <div id="upcoming-{{ talk_date }}-{{ talk.title | slugify }}" class="abstract-content" style="display: none;">
             <p>{{ talk.abstract }}</p>
           </div>
