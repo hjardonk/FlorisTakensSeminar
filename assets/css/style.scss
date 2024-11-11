@@ -64,6 +64,14 @@ font-size: 1.3em !important;
     font-size: 1.1em;
 }
 
+.time {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: left;
+    font-size: 1.1em;
+}
+
 /* Center the entire container (including header, sidebar, and main content) */
 .outer {
   max-width: 1000px; /* Adjust to match the overall width of your content */
