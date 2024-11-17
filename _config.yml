@@ -6,3 +6,5 @@ collections:
   talks:
     output: true
     sort_by: "date"
+# Trigger rebuild
+
