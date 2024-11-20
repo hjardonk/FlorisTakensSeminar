@@ -6,6 +6,7 @@ time: 3-5pm
 room: BB 5161.0293
 abstract: >
   We are estimated to spend one third of our life asleep, and it is increasingly apparent that good sleep is essential for overall health. Yet many people suffer from insufficient sleep or sleep disorders. Even though there is only a partial understanding about the why and how of sleep, mathematical models do exist that capture the broad features of sleep-wake regulation and are widely used in safety-critical industries to model fatigue risk.<br>
+    <br>
 
   In this talk we will discuss some mathematical models of sleep-wake regulation and their multi-time scale features. Most mathematical models consider two states: a sleep and a wake state. Biologically, sleep-wake regulation can be understood as the result of the interaction of two oscillatory processes: the circadian oscillation of our body clock, and a relaxation oscillator known as the `sleep homeostat' that results in a sleep pressure that increases during wake and decreases during sleep. The resulting two-process model has been immensely successful, providing the very language which frames most sleep research. An analysis of the two-timescale features of some more physiological based models of sleep-wake regulation can show that such models can be reduced to the so-called two-process model. This allows for a more physiological interpretation of some the parameters in the two-process model.<br>
 
