@@ -1,11 +1,11 @@
 ---
-title: "TBA"
+title: "Linear quantum systems: poles, zeros, invertibility and sensitivity"
 speaker: "Guofeng Zhang (The Hong Kong Polytechnic University)"
 date: 2024-12-11
 time: 3-5pm
 room: BB 5161.0293
-abstract: |
-  TBA
+abstract: >
+  The non-commutative nature of quantum mechanics imposes fundamental constraints on system dynamics, which in the linear realm, are manifested through the physical realizability conditions on system matrices. These restrictions give system matrices a unique structure. In this talk I discuss this structure by investigating the zeros and poles of linear quantum systems. Firstly, I show that  -s_0 is a transmission zero if and only if  s_0 is a pole of the transfer function, and -s_0  is an invariant zero if and only if  s_0  is an eigenvalue of the  A-matrix, of a linear quantum system. Moreover,  s_0 is an output-decoupling zero if and only if -s_0 is an input-decoupling zero. Secondly, based on these zero-pole relations, we prove that a linear quantum system must be Hurwitz unstable if it is strongly asymptotically left invertible. Stable input observers are constructed for unstable linear quantum systems. Finally, the sensitivity of a coherent feedback network is investigated. We found that the well-known complementarity constraint between sensitivity and complementary sensitivity functions no longer holds in the quantum regime; instead, much richer fundamental performance limitations exist. The  fundamental tradeoff between ideal input squeezing and system robustness is studied on the basis of system sensitivity analysis.
 ---
 
 
