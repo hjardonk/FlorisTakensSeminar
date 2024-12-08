@@ -21,6 +21,8 @@ title: ""
     {% assign current_date = site.time | date: "%Y-%m-%d" %}
     {% for talk in site.talks %}
       {% assign talk_date = talk.date | date: "%Y-%m-%d" %}
+   <!-- Debugging: Output current_date and talk_date -->
+    <!-- {{ current_date }} - {{ talk_date }} -->
       {% if talk_date >= current_date %}
         <div class="talk-item">
           <h2 onclick="toggleAbstract('upcoming-{{ talk_date }}-{{ talk.title | slugify }}')">{{ talk.title }} <span class="arrow">&#9660;</span> </h2>
