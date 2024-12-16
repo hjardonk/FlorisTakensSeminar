@@ -1,8 +1,12 @@
 ---
-title: "TBA "
+title: "Cosmic Anisotropy & Bianchi Characterization "
 speaker: "Robbert Scholtens (University of Groningen)"
 date: 2024-12-18
 room: BB 5161.0293
-abstract: |
-  TBA  
+abstract: >
+  The cosmological principle states that at the largest scales, the universe is spatially homogeneous and isotropic, directly leading to the spacetime metric at those scales to be one of the Robertson-Walker types. However, recent observations of e.g. bulk flows and supernovae call into question particularly the assumption of isotropy, the relaxing of which would yield new models of the universe at a fundamental level. One of such potential models is the Bianchi class, which consists of metrics with 3 non-vanishing Killing vector fields that form a spatial frame everywhere (this encodes only homogeneity). These have been studied at length before, e.g. by Jantzen, Ellis, McCallum, and Hawking.
+
+  Our presentation shows in some sense the reverse: when given a suitable 3D Lie algebra of vector fields, that we can find a spatial metric basis on which these are guaranteed to be Killing. (Then an extension to a spacetime metric can be made.) We do this in a pedagogical way, by gently introducing the problem and using advanced mathematics only to a necessary degree. In so doing we create a table which, when fed the suitable 3D Lie algebra, directly yields the frame for the metric. Finally, we illustrate the use case for this research by linking it to finding wave operators in homogeneous spacetimes.
+
+  This presentation is based on 2408.04938, in collaboration with Marcello Seri, Holger Waalkens, and Rien van de Weygaeart.  
 ---
