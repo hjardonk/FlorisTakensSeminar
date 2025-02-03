@@ -1,0 +1,10 @@
+---
+title: "Weyl's tube formula in sub-Riemannian geometry"
+speaker: "Tommasso Rossi (Laboratoire Jacques-Louis Lions - Sorbonne Université)"
+date: 2025-02-26
+time: 3-5pm
+room: BB 5161.0293
+abstract: >
+  The tube of radius r around a submanifold is the set of all points within distance r of the submanifold. In this talk, we discuss the volume of a tube around a submanifold in sub-Riemannian geometry. Firstly, we show that the volume of the tube around a non-characteristic submanifold of class $C^2$ is either smooth or real-analytic for small radii, depending on the regularity of the underlying manifold, and we establish a Weyl's tube formula. Secondly, we investigate Weyl's invariance theorem in sub-Riemannian geometry: we show that two curves in the Heisenberg group with the same Reeb angle have the same Weyl's tube formula. This is a joint work with T. Bossio and L. Rizzi.
+---
+
