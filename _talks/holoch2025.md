@@ -4,6 +4,7 @@ speaker: "Sonja Hohloch (University of Antwerp)"
 date: 2025-03-10
 time: 3-5pm
 room: EA 5159.0010
+mathjax: true
 abstract: >
   Many naturally occurring dynamical systems have symmetries or preserved quantities (just think of systems with preserved angles, invariance under rotation etc.). Roughly, integrable systems are Hamiltonian dynamical systems that admit a maximal number of independent symmetries/ preserved quantities.<br>
     <br>
