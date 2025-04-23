@@ -14,64 +14,75 @@ title: ""
 </head>
 
 <body>
- 
 
- <main>
+  <main>
     <h1 style="color: #47627D;">Upcoming Talks</h1>
     {% assign current_date = site.time | date: "%Y-%m-%d" %}
-    {% for talk in site.talks %}
+    {% assign sorted_talks = site.talks | sort: "date" %}
+
+    {% for talk in sorted_talks %}
       {% assign talk_date = talk.date | date: "%Y-%m-%d" %}
-   <!-- Debugging: Output current_date and talk_date -->
-    <!-- {{ current_date }} - {{ talk_date }} -->
       {% if talk_date >= current_date %}
-        <div class="talk-item">
-          <h2 onclick="toggleAbstract('upcoming-{{ talk_date }}-{{ talk.title | slugify }}')">{{ talk.title }} <span class="arrow">&#9660;</span> </h2>
+        <article class="talk-item">
+          <h2>
+            <span class="toggle-title" role="button"
+                  aria-expanded="false"
+                  aria-controls="upcoming-{{ talk_date }}-{{ talk.title | slugify }}"
+                  onclick="toggleAbstract('upcoming-{{ talk_date }}-{{ talk.title | slugify }}', this)">
+              {{ talk.title }} <span class="arrow">&#9660;</span>
+            </span>
+          </h2>
           <p class="speaker"><strong>Speaker:</strong> {{ talk.speaker }}</p>
           <p class="date-room">
-            <span class="date"><strong>Date:</strong> {{ talk.date | date: "%B %d, %Y" }} </span>
+            <span class="date"><strong>Date:</strong> {{ talk.date | date: "%B %d, %Y" }}</span>
             <span class="room"><strong>Room:</strong> {{ talk.room }}</span>
           </p>
           <p class="time"><strong>Time:</strong> {{ talk.time }}</p>
-          <div id="upcoming-{{ talk_date }}-{{ talk.title | slugify }}" class="abstract-content" style="display: none;">
+          <div id="upcoming-{{ talk_date }}-{{ talk.title | slugify }}" class="abstract-content">
             <p>{{ talk.abstract }}</p>
           </div>
-        </div>
+        </article>
       {% endif %}
     {% endfor %}
 
     <h1 style="color: #47627D;">Past Talks</h1>
-{% assign sorted_talks = site.talks | sort: "date" | reverse %}
-{% for talk in sorted_talks %}
-  {% assign talk_date = talk.date | date: "%Y-%m-%d" %}
-  {% if talk_date < current_date %}
-    <div class="talk-item">
-      <h2 onclick="toggleAbstract('past-{{ talk_date }}-{{ talk.title | slugify }}')">{{ talk.title }} <span class="arrow">&#9660;</span> </h2>
-      <p class="speaker"><strong>Speaker:</strong> {{ talk.speaker }}</p>
-      <p class="date-room">
-        <span class="date"><strong>Date:</strong> {{ talk.date | date: "%B %d, %Y" }}</span>
-        <span class="room"><strong>Room:</strong> {{ talk.room }}</span>
-      </p>
-      <p class="time"><strong>Time: </strong> {{ talk.time }} </p>
-      <div id="past-{{ talk_date }}-{{ talk.title | slugify }}" class="abstract-content" style="display: none;">
-        <p>{{ talk.abstract }}</p>
-      </div>
-    </div>
-  {% endif %}
-{% endfor %}
-
+    {% assign reversed_talks = sorted_talks | reverse %}
+    {% for talk in reversed_talks %}
+      {% assign talk_date = talk.date | date: "%Y-%m-%d" %}
+      {% if talk_date < current_date %}
+        <article class="talk-item">
+          <h2>
+            <span class="toggle-title" role="button"
+                  aria-expanded="false"
+                  aria-controls="past-{{ talk_date }}-{{ talk.title | slugify }}"
+                  onclick="toggleAbstract('past-{{ talk_date }}-{{ talk.title | slugify }}', this)">
+              {{ talk.title }} <span class="arrow">&#9660;</span>
+            </span>
+          </h2>
+          <p class="speaker"><strong>Speaker:</strong> {{ talk.speaker }}</p>
+          <p class="date-room">
+            <span class="date"><strong>Date:</strong> {{ talk.date | date: "%B %d, %Y" }}</span>
+            <span class="room"><strong>Room:</strong> {{ talk.room }}</span>
+          </p>
+          <p class="time"><strong>Time:</strong> {{ talk.time }}</p>
+          <div id="past-{{ talk_date }}-{{ talk.title | slugify }}" class="abstract-content">
+            <p>{{ talk.abstract }}</p>
+          </div>
+        </article>
+      {% endif %}
+    {% endfor %}
   </main>
 
-
   <script>
-    function toggleAbstract(id) {
-      var content = document.getElementById(id);
-      if (content.style.display === "none") {
-        content.style.display = "block";
-      } else {
-        content.style.display = "none";
+    function toggleAbstract(id, element) {
+      const content = document.getElementById(id);
+      const isOpen = content.style.display === "block";
+      content.style.display = isOpen ? "none" : "block";
+      if (element) {
+        element.setAttribute("aria-expanded", !isOpen);
       }
     }
   </script>
-</body>
 
+</body>
 </html>
