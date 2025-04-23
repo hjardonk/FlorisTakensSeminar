@@ -38,7 +38,7 @@ title: ""
             <span class="room"><strong>Room:</strong> {{ talk.room }}</span>
           </p>
           <p class="time"><strong>Time:</strong> {{ talk.time }}</p>
-          <div id="upcoming-{{ talk_date }}-{{ talk.title | slugify }}" class="abstract-content">
+          <div id="upcoming-{{ talk_date }}-{{ talk.title | slugify }}" class="abstract-content" style="display: none;">
             <p>{{ talk.abstract }}</p>
           </div>
         </article>
@@ -65,7 +65,7 @@ title: ""
             <span class="room"><strong>Room:</strong> {{ talk.room }}</span>
           </p>
           <p class="time"><strong>Time:</strong> {{ talk.time }}</p>
-          <div id="past-{{ talk_date }}-{{ talk.title | slugify }}" class="abstract-content">
+          <div id="past-{{ talk_date }}-{{ talk.title | slugify }}" class="abstract-content" style="display: none;">
             <p>{{ talk.abstract }}</p>
           </div>
         </article>
