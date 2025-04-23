@@ -40,23 +40,25 @@ title: ""
     {% endfor %}
 
     <h1 style="color: #47627D;">Past Talks</h1>
-    {% for talk in site.talks %}
-      {% assign talk_date = talk.date | date: "%Y-%m-%d" %}
-      {% if talk_date < current_date %}
-        <div class="talk-item">
-          <h2 onclick="toggleAbstract('past-{{ talk_date }}-{{ talk.title | slugify }}')">{{ talk.title }} <span class="arrow">&#9660;</span> </h2>
-          <p class="speaker"><strong>Speaker:</strong> {{ talk.speaker }}</p>
-          <p class="date-room">
-            <span class="date"><strong>Date:</strong> {{ talk.date | date: "%B %d, %Y" }}</span>
-            <span class="room"><strong>Room:</strong> {{ talk.room }}</span>
-          </p>
-        <p class="time"><strong>Time: </strong> {{ talk.time }} </p>
-          <div id="past-{{ talk_date }}-{{ talk.title | slugify }}" class="abstract-content" style="display: none;">
-            <p>{{ talk.abstract }}</p>
-          </div>
-        </div>
-      {% endif %}
-    {% endfor %}
+{% assign sorted_talks = site.talks | sort: "date" | reverse %}
+{% for talk in sorted_talks %}
+  {% assign talk_date = talk.date | date: "%Y-%m-%d" %}
+  {% if talk_date < current_date %}
+    <div class="talk-item">
+      <h2 onclick="toggleAbstract('past-{{ talk_date }}-{{ talk.title | slugify }}')">{{ talk.title }} <span class="arrow">&#9660;</span> </h2>
+      <p class="speaker"><strong>Speaker:</strong> {{ talk.speaker }}</p>
+      <p class="date-room">
+        <span class="date"><strong>Date:</strong> {{ talk.date | date: "%B %d, %Y" }}</span>
+        <span class="room"><strong>Room:</strong> {{ talk.room }}</span>
+      </p>
+      <p class="time"><strong>Time: </strong> {{ talk.time }} </p>
+      <div id="past-{{ talk_date }}-{{ talk.title | slugify }}" class="abstract-content" style="display: none;">
+        <p>{{ talk.abstract }}</p>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+
   </main>
 
 
