@@ -1,0 +1,16 @@
+---
+title: "Two examples of fast-slow dynamics in mechanical engineering"
+speaker: "Baptiste Bergeot (INSA-CVL / LaMé, Blois, France)"
+date: 2025-05-07
+time: 3-5pm
+room: BB 5161.0293
+mathjax: true
+abstract: >
+
+  This presentation will explore the complex dynamics of two types of fast-slow mechanical systems. The first system is a nonlinear passive vibration absorber, referred to as a Nonlinear Energy Sink (NES), which is coupled to a self-sustained oscillator requiring vibration attenuation. The second system is a self-sustained wind musical instrument (such as the clarinet) in which one of the bifurcation parameters - specifically, the air pressure within the musician's mouth - varies over time accounting for attack transients performed by the musician. Although these two systems differ greatly in term of applications, they are both modeled by systems of differential equations featuring a small parameter highlighting their singularly perturbed, fast-slow nature. As a result, their dynamics (i) cannot be fully explained by the concepts traditionally used in engineering such as bifurcation diagrams and basins of attraction and (ii) can be significantly influenced by the presence of noise. For each of these systems, the deterministic dynamics will be examined within the framework of the geometric singular perturbation theory but also using more recent concepts developed for analyzing rate-induced tipping phenomena. In selected cases, the impact of noise will also be explored using both numerical simulations and analytical techniques.
+ 
+---
+
+
+
+
