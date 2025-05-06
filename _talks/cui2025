@@ -1,1 +1,11 @@
+---
+title: "Tensor-based Analysis of Hypergraphs and Higher-Order Network Dynamics"
+speaker: "Shaoxuan Cui (RUG)"
+date: 2025-05-14
+time: 4-5pm
+room: BB 5161.0293
+mathjax: true
+abstract: >
 
+  In graph-theoretical terms, an edge in a graph connects two vertices, whereas a hyperedge in a hypergraph can connect more than two vertices. From a modeling perspective, a conventional edge denotes a pairwise interaction between two nodes, while a hyperedge may denote a group-wise interaction among several nodes. A hypergraph is said to be uniform if all its hyperedges connect the same number of vertices. In algebraic graph theory, a graph is characterized by an adjacency matrix; correspondingly, a uniform hypergraph can be described by an adjacency tensor. Furthermore, a nonuniform hypergraph can be represented as a set of tensors of different orders. This structural similarity enables the extension of classical matrix analysis techniques, traditionally used for graphs and networked dynamical systems, to hypergraphs and higher-order dynamical systems by leveraging tensor properties. Specifically, we introduce novel notions of tensor irreducibility, corresponding to various forms of strong connectedness in hypergraphs analogous to the graph case. Moreover, we demonstrate that the Perron–Frobenius theorem for nonnegative tensors can be employed to analyze the stability of a class of systems evolving on hypergraphs. This tensor-based framework provides a powerful analytical tool for addressing challenges in network science, complex systems, and control theory. 
+---
