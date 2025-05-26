@@ -1,9 +1,9 @@
 ---
-title: "TBA"
+title: "Applications of Fast-Slow Dynamics to Coevolutionary Networks"
 speaker: "Luis Venegas (University of Groningen)"
-date: 2025-02-27
+date: 2025-06-11
 time: 3-5pm
-room: TBA
+room: 5161.0293
 abstract: >
-  TBA   
+  In this talk, I present results from three projects focused on fast-slow dynamics and the control of coevolutionary networks. I begin by introducing a novel mechanism to generate and control synchronization patterns in networks of Kuramoto oscillators, including chimera states. By analysing the geometric structure of a mean-field formulation, I demonstrate how to produce rhythmic patterns through the targeted design of a controlling dynamic. Next, I briefly describe a decision-making control strategy for a consumption system. This approach leverages system criticality and implements fast-slow controllers based on the normal form of fold points to achieve effective regulation. I then devote the main part of the talk to a new control framework for shaping rhythmic activity in mixed-feedback systems, with a focus on neuromorphic circuits. This method introduces a control node featuring coevolutionary and directed couplings, enabling robust control even when the reference network has a different topology, undergoes parametric uncertainty, or evolves over time. I conclude with a discussion of potential extensions and future directions in coevolutionary dynamics and neuromodulation.   
 ---
