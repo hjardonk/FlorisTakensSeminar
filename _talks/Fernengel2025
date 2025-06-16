@@ -1,11 +1,22 @@
 ---
-title: "TBA"
+title: "
+Long-term behavior of master equations on a countable system"
 speaker: "Bernd Michael Fernengel (U. Oldenburg)"
 date: 2025-06-17
 time: 3-5pm
-room: tba
+room: 5161.0293
 mathjax: true
 abstract: >
 
-  TBA 
+  Master equations play a crucial role in natural science, as they describe the time evolution of probability distributions of all systems that can be modeled as directed, weighted graphs. 
+Despite their essential role, computing a solution is often avoided and authors refer to numerical methods or approximation techniques instead.
+
+We present both a mathematically sound framework for master equations on a discrete, countable configuration space as well as sufficient conditions the generator of the master equation must have for the time limit t -> infinity to converge, which is not guaranteed on an infinite dimensional space. 
+
+We discuss the assumptions for the possibility of interchanging the thermodynamic limit and the time limit. This makes it possible to obtain the long-term behavior of an infinite system from a thermodynamic limit of stationary solutions of corresponding finite subnetworks. 
+
+Our method is demonstrated by a few examples of master equations, such as linear, infinitely long chains, with one- and two open ends. 
 ---
+
+
+
