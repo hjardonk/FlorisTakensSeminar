@@ -7,7 +7,7 @@ room: 5612.0142 (Feringa building)
 mathjax: true
 abstract: >
 
-  We refer to dynamic networks as dynamical systems in which a network structure can be identified, capturing the interactions among relatively “simple” individual components. This intentionally broad and informal definition raises several questions: How should the network be defined? What exactly qualifies as “simple”?<br>
+  We refer to **dynamic networks** as dynamical systems in which a network structure can be identified, capturing the interactions among relatively “simple” individual components. This intentionally broad and informal definition raises several questions: How should the network be defined? What exactly qualifies as “simple”?<br>
 
   In this talk, we focus on dynamical systems whose individual components are either harmonic oscillators or pendula. These are considered “simple” in the sense that, when uncoupled, they can be thoroughly analysed using well-established analytical methods. The network structure, on the other hand, is encoded in the matrices appearing in the equations of motion or in the linear stability analysis.<br>
 
