@@ -1,5 +1,5 @@
 ---
-title: "TBA"
+title: "Ecosystems on sparse networks: a cavity approach"
 speaker: "Tommaso Tonolo (GSSI)"
 date: 2025-12-03
 time: 3-4 pm
@@ -7,5 +7,8 @@ room: BB 5161.0293
 mathjax: true
 abstract: >
 
-  TBA 
+  In this talk I will present a study on the equilibrium phases of the generalized Lotka-Volterra model with a sparse species interaction network characterized by symmetric and normally distributed interactions. The stochastic dynamics of the system converges to an equilibrium distribution, which we exploit to compute species abundance marginals using Belief Propagation, an iterative algorithm designed to solve cavity equations.
+We reveal a rich and non-trivial phenomenology, significantly deviating from the predictions of dense networks.
+I will then briefly discuss the case of asymmetric interaction networks, introducing a powerful approach based on mean-field closures of local Fokker-Planck equations.
+Altogether, these results offer new insights into the complex dynamics of ecosystems, emphasizing the importance of incorporating sparse interactions into ecological models to better capture real-world phenomena. 
 ---
