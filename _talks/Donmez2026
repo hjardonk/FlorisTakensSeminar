@@ -1,0 +1,20 @@
+---
+title: "Resonance, Normal Forms, and Network Structure in Coupled Oscillator Systems"
+speaker: "Bengi Dönmez (VU Amsterdam)"
+date: 2026-05-13
+time: 3-4 pm
+room: BB 5161.0293
+mathjax: true
+abstract: >
+
+  This talk consists of two related projects on the role of resonance and normal-form methods in coupled oscillator networks.<br>
+
+  The first part concerns the reconstruction of network and higher-order interaction structure from noisy time-series data. Rather than aiming to identify the exact phase equations, the method reconstructs the first- and second-order resonant normal form, which captures the dynamically relevant interaction structure and provides accurate approximations of the observed dynamics. We give rigorous accuracy estimates and illustrate the approach with numerical examples.<br>
+
+  The second part focuses on solitary states in oscillator networks with inertia. We study resonant solitary states in oscillator networks with inertia, where one oscillator detaches from a synchronized cluster and evolves at a distinct mean frequency. We reduce the network dynamics to a system coupling a rotator, representing the solitary oscillator, to a harmonic oscillator, representing a dominant Laplacian mode of the cluster. Using normal-form and symmetry methods, we characterize resonant solitary states as relative equilibria and derive explicit algebraic conditions for their existence and effective frequencies.
+---
+
+
+Title: 
+
+Abstract: 
